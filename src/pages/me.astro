@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MyLinks from "../components/MyLinks.astro";
+
+if (!Astro.cookies.get("user")?.value) return Astro.redirect("/signin");
+---
+
+<Layout title="me">
+  <h1 class="p-4 text-white text-3xl font-bold text-center mb-10">
+    These are my <span class="text-gradient">Short Links</span>
+  </h1>
+  
+  <a href={Astro.url.origin + "/link/create"}
+  class="text-blue-600 border border-blue-600 rounded-md hover:text-gray-200 hover:border-gray-500 p-3 mx-2 font-bold"
+  >Create New ShortLink</a>
+  
+  <main class="p-2 mt-5 grid gap-4">
+    <MyLinks />
+  </main>
+</Layout>
+<script></script>

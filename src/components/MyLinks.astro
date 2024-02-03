@@ -1,0 +1,11 @@
+---
+import CardLink from "./CardLink.astro";
+import { getLinkByUser } from "../services/shortlink";
+
+const user = Astro.cookies.get("user")?.value as string;
+const links = await getLinkByUser(user);
+---
+
+<section class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+  {links.map((link) => <CardLink title={link.title} url={link.url} />)}
+</section>

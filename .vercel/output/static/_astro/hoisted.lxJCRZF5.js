@@ -1,0 +1,1 @@
+import"./hoisted.6Y_FLd_b.js";document.querySelectorAll(".btnCopy")?.forEach(t=>{t.addEventListener("click",()=>{navigator.clipboard.writeText(t.getAttribute("data-url")+"/s/"+t.getAttribute("data-title")),alert("Copied!")})});
