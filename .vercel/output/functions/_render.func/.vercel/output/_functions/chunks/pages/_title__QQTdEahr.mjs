@@ -43,7 +43,7 @@ const isMessageErrors = (msg) => {
   return false;
 };
 
-const API_URL_BASE = "http://localhost:8080/";
+const API_URL_BASE = "";
 const getLinkByUser = async (_user) => {
   const { token, user } = JSON.parse(_user);
   const res = await fetch(

@@ -1,0 +1,1 @@
+import{u as e}from"./shortlink.tGkCAm66.js";import"./hoisted.6Y_FLd_b.js";const n=document.getElementById("form"),m=document.getElementById("txt-title"),d=document.getElementById("txt-url"),i=document.getElementById("txt-id-link");n?.addEventListener("submit",async t=>{t.preventDefault(),await e(i.value,m.value.trim(),d.value.trim())});

@@ -1,0 +1,1 @@
+import{r as a}from"./shortlink.tGkCAm66.js";import"./hoisted.6Y_FLd_b.js";const r=document.getElementById("form"),e=document.getElementById("password"),t=document.getElementById("name"),m=document.getElementById("email");r?.addEventListener("submit",async n=>{n.preventDefault(),e&&t&&m&&await a(t.value.trim(),m.value.trim(),e.value.trim())});

@@ -1,7 +1,7 @@
 import type {Link, MessageErrors, MessageLoginError, ShortLinks, UserID} from '../types/api';
 import {isMessageErrors, isMessageLoginError} from '../types/validation-type';
 
-const API_URL_BASE = import.meta.env.PUBLIC_URL_API_BASE
+const API_URL_BASE = import.meta.env.DEV ? import.meta.env.PUBLIC_URL_API_BASE : import.meta.env.PUBLIC_URL_API_BASE_PROD
 
 export const getLinks =
     async () => {
