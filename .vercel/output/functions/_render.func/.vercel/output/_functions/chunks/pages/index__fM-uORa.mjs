@@ -3,7 +3,7 @@ import { c as createAstro, d as createComponent, r as renderTemplate, m as maybe
 import 'kleur/colors';
 import 'html-escaper';
 import 'clsx';
-import { $ as $$Layout, g as getLinkByUser } from './_title__xCjsEa6n.mjs';
+import { $ as $$Layout, g as getLinkByUser } from './_title__0qQHlEP-.mjs';
 /* empty css                          */
 
 const $$Astro$3 = createAstro();

@@ -63,7 +63,6 @@ const getLinksByTitle = async ({ title }) => {
 };
 
 const $$Astro$1 = createAstro();
-const prerender$1 = false;
 const $$title$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$title$1;
@@ -83,12 +82,10 @@ const _title_$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
   __proto__: null,
   default: $$title$1,
   file: $$file$1,
-  prerender: prerender$1,
   url: $$url$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const $$Astro = createAstro();
-const prerender = false;
 const $$title = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$title;
@@ -106,7 +103,6 @@ const _title_ = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: $$title,
   file: $$file,
-  prerender,
   url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 

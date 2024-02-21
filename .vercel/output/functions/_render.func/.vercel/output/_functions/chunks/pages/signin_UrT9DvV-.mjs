@@ -3,7 +3,7 @@ import { c as createAstro, d as createComponent, r as renderTemplate, f as rende
 import 'kleur/colors';
 import 'html-escaper';
 import 'clsx';
-import { $ as $$Layout } from './_title__xCjsEa6n.mjs';
+import { $ as $$Layout } from './_title__0qQHlEP-.mjs';
 
 const $$Astro = createAstro();
 const $$Signin = createComponent(async ($$result, $$props, $$slots) => {
