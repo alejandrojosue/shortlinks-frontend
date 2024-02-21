@@ -1,5 +1,5 @@
-/* empty css                               */
 import 'html-escaper';
+/* empty css                               */
 import { c as createAstro, d as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderComponent, g as renderHead, h as renderSlot } from '../astro_2TvlQJEG.mjs';
 import 'kleur/colors';
 import 'clsx';

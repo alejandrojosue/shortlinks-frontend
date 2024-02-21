@@ -1,6 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import MyLinks from "../components/MyLinks.astro";
+import CardLink from "../../components/CardLink.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getLinkByUser } from "../../services/shortlink";
+
+const user = Astro.cookies.get("user")?.value as string;
+const links = await getLinkByUser(user);
 
 if (!Astro.cookies.get("user")?.value) return Astro.redirect("/signin");
 ---
@@ -15,7 +19,9 @@ if (!Astro.cookies.get("user")?.value) return Astro.redirect("/signin");
   >Create New ShortLink</a>
   
   <main class="p-2 mt-5 grid gap-4">
-    <MyLinks />
+    <section class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {links.map((link) => <CardLink title={link.title} url={link.url} />)}
+    </section>
   </main>
 </Layout>
 <script></script>

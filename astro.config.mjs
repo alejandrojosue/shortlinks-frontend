@@ -8,6 +8,6 @@ export default defineConfig({
   integrations: [tailwind()],
   // site: 'http://loaclhost:8080/api/links',
   plugins: [],
-  output: 'hybrid',
+  output: 'server',
   adapter: vercel()
 });

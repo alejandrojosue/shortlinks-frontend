@@ -1,6 +1,6 @@
 export { renderers } from '../renderers.mjs';
 export { onRequest } from '../_empty-middleware.mjs';
 
-const page = () => import('./prerender_UhjzJiwS.mjs').then(n => n._);
+const page = () => import('./pages/signup_F8f4dDoD.mjs');
 
 export { page };

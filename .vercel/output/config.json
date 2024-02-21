@@ -16,7 +16,27 @@
 			"dest": "_render"
 		},
 		{
+			"src": "^\\/$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/404\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/forgotpass\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/link\\/create\\/?$",
+			"dest": "_render"
+		},
+		{
 			"src": "^\\/link\\/edit\\/([^/]+?)\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/me\\/?$",
 			"dest": "_render"
 		},
 		{
@@ -24,8 +44,16 @@
 			"dest": "_render"
 		},
 		{
+			"src": "^\\/signin\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/signup\\/?$",
+			"dest": "_render"
+		},
+		{
 			"src": "/.*",
-			"dest": "/404.html",
+			"dest": "_render",
 			"status": 404
 		}
 	]
