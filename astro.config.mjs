@@ -8,6 +8,6 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://shortlinks-frontend.vercel.app/',
   plugins: [],
-  output: 'hybrid',
+  output: 'server',
   adapter: vercel()
 });
