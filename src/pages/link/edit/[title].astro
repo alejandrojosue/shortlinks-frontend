@@ -1,7 +1,7 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import { getLinksByTitle } from "../../../services/shortlink";
-export const prerender = false;
+// export const prerender = false;
 const { title } = Astro.params;
 const data = title && (await getLinksByTitle({ title }));
 if (!data.url) return Astro.redirect("/404");
