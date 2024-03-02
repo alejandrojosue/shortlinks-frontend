@@ -1,6 +1,6 @@
 ---
 import { getLinksByTitle } from "../../services/shortlink";
-// export const prerender = false; //server
+export const prerender = false; //server
 const { title } = Astro.params;
 const {url} = title && (await getLinksByTitle({ title }));
 if (url) return Astro.redirect(url);
